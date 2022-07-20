@@ -1,0 +1,1 @@
+utils: Funciones genéricas.

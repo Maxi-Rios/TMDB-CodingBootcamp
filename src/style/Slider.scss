@@ -1,0 +1,70 @@
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slider ul {
+  padding: 0;
+  display: flex;
+  width: 2000%; // por cada imagen son 100% de width
+
+  animation: cambio 20s infinite alternate; // cambio deefinir abajo
+  animation-timing-function: linear;
+}
+
+.slider li {
+  width: 100%;
+
+  list-style: none;
+}
+
+.slider li img {
+  width: 100%;
+  height: 100%;
+}
+.slider p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: antiquewhite;
+}
+
+@supports (object-fit: cover) {
+  .slider img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
